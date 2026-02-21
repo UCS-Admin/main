@@ -1,0 +1,1 @@
+export default function Page() { return <main className="p-8"><h1 className="text-2xl font-semibold">Profile</h1><p>Personal details, academics, document upload, AI OCR verification and BGV trigger.</p></main>; }

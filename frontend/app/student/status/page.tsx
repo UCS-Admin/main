@@ -1,0 +1,1 @@
+export default function Page() { return <main className="p-8"><h1 className="text-2xl font-semibold">Admission Status</h1><p>Track pending/approved/rejected with college remarks and alerts.</p></main>; }
