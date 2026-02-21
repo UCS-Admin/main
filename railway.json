@@ -1,0 +1,1 @@
+{"type": "web","name": "FastAPI App","env": {},"build": {"cmd": "pip install -r requirements.txt","base":"python"},"start": {"cmd": "uvicorn app.main:app --host 0.0.0.0 --port $PORT"}}
