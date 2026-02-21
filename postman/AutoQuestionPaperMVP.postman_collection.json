@@ -1,0 +1,18 @@
+{
+  "info": {
+    "name": "EPC Admission + Question Practice",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {"name": "Register Student", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "url": "{{baseUrl}}/auth/register", "body": {"mode": "raw", "raw": "{\n  \"email\": \"student2@example.com\",\n  \"full_name\": \"Student 2\",\n  \"password\": \"pass123\",\n  \"role\": \"STUDENT\"\n}"}}},
+    {"name": "Student Dashboard", "request": {"method": "GET", "header": [{"key": "Authorization", "value": "Bearer {{token}}"}], "url": "{{baseUrl}}/dashboards/student"}},
+    {"name": "Apply College", "request": {"method": "POST", "header": [{"key": "Authorization", "value": "Bearer {{token}}"},{"key": "Content-Type", "value": "application/json"}], "url": "{{baseUrl}}/applications", "body": {"mode": "raw", "raw": "{\n  \"institution_id\": 1,\n  \"course\": \"B.Tech CSE\"\n}"}}},
+    {"name": "Upload Past Paper", "request": {"method": "POST", "header": [{"key": "Authorization", "value": "Bearer {{adminToken}}"}], "url": "{{baseUrl}}/admin/past-papers/upload?title=Math%20Paper&subject_id=1&grade=10&year=2024"}},
+    {"name": "Generate Similar Paper", "request": {"method": "POST", "header": [{"key": "Authorization", "value": "Bearer {{token}}"}], "url": "{{baseUrl}}/students/practice/generate-from-paper/1"}}
+  ],
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8000"},
+    {"key": "token", "value": ""},
+    {"key": "adminToken", "value": ""}
+  ]
+}

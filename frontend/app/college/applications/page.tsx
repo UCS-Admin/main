@@ -1,0 +1,1 @@
+export default function Page() { return <main className="p-8"><h1 className="text-2xl font-semibold">Applications</h1><p>Document review with Accept/Reject/Hold and AI-assisted verification.</p></main>; }

@@ -1,0 +1,1 @@
+export default function Page() { return <main className="p-8"><h1 className="text-2xl font-semibold">College Analytics</h1><p>Demand trends, region-wise applicants, and course popularity.</p></main>; }

@@ -1,0 +1,1 @@
+export default function Page() { return <main className="p-8"><h1 className="text-2xl font-semibold">College Search & Compare</h1><p>Filters by course/city/fees with NIRF/QS/THE/NAAC and AI recommendation.</p></main>; }

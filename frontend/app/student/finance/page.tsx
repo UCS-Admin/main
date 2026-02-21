@@ -1,0 +1,1 @@
+export default function Page() { return <main className="p-8"><h1 className="text-2xl font-semibold">Finance</h1><p>Admission fee payments, loan offers, scholarships, insurance and cards.</p></main>; }
